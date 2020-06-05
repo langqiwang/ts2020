@@ -74,7 +74,7 @@ public class FZhKTController {
         online_num=0;
         for (int i = 0; i < 5; i++) {
             scoreModel m = new scoreModel();
-            m.setId(toString().valueOf(i + 1));
+            m.setId(toString().valueOf(i + 1+Constants.scoredataDic.values().size()));
             m.setMachine_id("PC01");
             m.setUser_name(stuLst.get(i));
             m.setStudent_num("STU00" + toString().valueOf(i + 1));
