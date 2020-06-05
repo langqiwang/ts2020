@@ -1,5 +1,6 @@
 package com.esst.ts.controller;
 
+import com.esst.ts.constants.Constants;
 import com.esst.ts.model.Result;
 import com.esst.ts.model.courseTaskModel;
 import com.esst.ts.model.scoreModel;
@@ -56,7 +57,10 @@ public class FZhKTController {
         //</editor-fold>
         int total_num;          //总人数
         int online_num;         //在线人数
-        List<scoreModel> datalist = new ArrayList<scoreModel>();
+        //List<scoreModel> datalist = new ArrayList<scoreModel>();
+
+        List<scoreModel> datalist = new ArrayList(Constants.scoredataDic.values());
+
         //<editor-fold desc="实时数据列表赋值：datalist">
 
         //<editor-fold desc="临时数据">
